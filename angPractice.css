@@ -1,17 +1,23 @@
 .sideBox {
 	padding-top: 20px;
-	height: 400px;
-	width: 400px;
+	height: 250px;
+	width: 250px;
 	text-align: center;
 	font-family: Tahoma;
 	font-size: 18px;
 }
 
 #circle { 
-   width: 140px;
-   height: 140px;
+   width: 70px;
+   height: 70px;
    background: white; 
    -moz-border-radius: 70px; 
    -webkit-border-radius: 70px; 
    border-radius: 70px;
+}
+
+.form-inline {
+	
+	padding: 5px;
+	
 }
