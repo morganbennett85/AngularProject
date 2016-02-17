@@ -21,3 +21,16 @@
 	padding: 5px;
 	
 }
+
+#redValueBox {
+	
+	background-color: #ffb3b3;
+}
+#blueValueBox {
+	
+	background-color: #cce6ff;
+}
+#greenValueBox {
+	
+	background-color: #ccffcc;
+}
