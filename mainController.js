@@ -71,4 +71,18 @@ app.controller('MainController', ['$scope', function($scope) {
 		
 		$scope.colors[1].value = value;
 	};*/
+	$scope.resetRed = function() {
+		$scope.colors[0].value = 255;
+	};
+	$scope.resetBlue = function() {
+		$scope.colors[1].value = 255;
+	};
+	$scope.resetGreen = function() {
+		$scope.colors[2].value = 255;
+	};
+	$scope.resetAll = function() {
+		$scope.colors[0].value = 255;
+		$scope.colors[1].value = 255;
+		$scope.colors[2].value = 255;
+	};
 }]);
