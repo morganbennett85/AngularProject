@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/vendor/angular.min.js"></script>
+    <title>Angular Practice</title>
+    <link href="btstrp/css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/angPractice.css" rel="stylesheet">
+  </head>
+  <body ng-app="angPractice">
+    <h1><center>AngularJS<center></h1>
+	<div class="main" ng-controller="MainController">
+		<div class="container">
+			<div class="col-md-3 buttonHolder">
+				<p class="count">Count: {{ thing.count }}</p>
+				<button type="button" class="btn btn-success btn-lg" ng-click="increase()">Increase</button>
+				<button type="button" class="btn btn-danger btn-xs" ng-click="decrease()">Decrease</button>
+			</div>
+			<div class="col-md-3">
+				<p class="number">Number: {{ thing.number }}</p>
+				<button type="button" class="btn btn-info" ng-click="numIncrease()">Increase</button>
+				<button type="button" class="btn btn-warning" ng-click="numDecrease()">Decrease</button>
+			</div>
+			<div class="col-md-3"></div>
+			<div class="col-md-3"></div>
+		</div>
+	</div>   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="btstrp/js/bootstrap.min.js"></script>
+	<!-- Modules -->
+	<script src="js/app.js"></script>
+	<!-- Controllers -->
+	<script src="js/controllers/mainController.js"></script>
+	<!-- Directives -->
+	<!-- <script src="js/directives/codeCourse.js"></script> -->
+  </body>
+</html>
