@@ -1,11 +1,5 @@
 app.controller('MainController', ['$scope', function($scope) {
-
-	$scope.thing = {
 	
-		count: 0,
-		number: 50
-		
-	};
 	$scope.colors = [
 		{
 			name: "Red Value",
@@ -20,22 +14,6 @@ app.controller('MainController', ['$scope', function($scope) {
 			value: 255
 		
 		}],
-	$scope.increase = function() {
-	
-		$scope.thing.count += 1;
-	};
-	$scope.decrease = function() {
-	
-		$scope.thing.count -= 1;
-	};
-	$scope.numIncrease = function() {
-	
-		$scope.thing.number += 50;
-	};
-	$scope.numDecrease = function() {
-	
-		$scope.thing.number -= 50;
-	};
 	$scope.increaseRed = function() {
 		
 		$scope.colors[0].value += 5;
@@ -81,4 +59,16 @@ app.controller('MainController', ['$scope', function($scope) {
 			$scope.colors[2].value = 0;
 		}
 	};
+	/*$scope.updateRed = function(value) {
+		
+		$scope.colors[0].value = value;
+	};
+	$scope.updateGreen = function(value) {
+		
+		$scope.colors[2].value = value;
+	};
+	$scope.updateBlue = function(value) {
+		
+		$scope.colors[1].value = value;
+	};*/
 }]);
