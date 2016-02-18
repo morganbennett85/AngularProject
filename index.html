@@ -15,15 +15,15 @@
 		<div class="container">
 			<div class=row">
 				<div class="col-md-3">
-					<center><p class="redValue">Red Value: {{ colors[0].value }}</p></center>
+					<center><p class="redValue">Change the Red Value: <!--{{ colors.redValue }}--></p></center>
 					<button type="button" class="btn btn-danger" ng-click="increaseRed()">Increase</button>
 					<button type="button" class="btn btn-danger" ng-click="decreaseRed()">Decrease</button>
 					<button type="button" class="btn btn-danger" ng-click="resetRed()">Reset</button>
-					<center><p class="blueValue">Blue Value: {{ colors[1].value }}</p></center>
+					<center><p class="blueValue">Change the Blue Value: <!--{{ colors.blueValue }}--></p></center>
 					<button type="button" class="btn btn-primary" ng-click="increaseBlue()">Increase</button>
 					<button type="button" class="btn btn-primary" ng-click="decreaseBlue()">Decrease</button>
 					<button type="button" class="btn btn-primary" ng-click="resetBlue()">Reset</button>
-					<center><p class="greenValue">Green Value: {{ colors[2].value }}</p></center>
+					<center><p class="greenValue">Change the Green Value: <!--{{ colors.greenValue }} --></p></center>
 					<button type="button" class="btn btn-success" ng-click="increaseGreen()">Increase</button>
 					<button type="button" class="btn btn-success" ng-click="decreaseGreen()">Decrease</button>
 					<button type="button" class="btn btn-success" ng-click="resetGreen()">Reset</button>
@@ -34,7 +34,7 @@
 						</center>
 					</form>
 				</div>
-				<div class="col-md-6" style="background-color: rgb( {{ colors[0].value }}, {{ colors[1].value }}, {{ colors[2].value }});">
+				<div class="col-md-6" style="background-color: rgb( {{ colors.redValue }}, {{ colors.blueValue }}, {{ colors.greenValue }});">
 					<center><p class="sideBox">Use the buttons to change my color and find the hidden surprise!</p></center>
 					<p id="circle"></p>
 				</div>
@@ -43,23 +43,23 @@
 					<form class="form-inline">
 						<div class="form-group">
 							<label class="sr-only" for="redValueBox">Red:</label>
-							<input type="number" class="form-control" id="redValueBox" placeholder="0 to 255" min="0" max="255" name="newRedValue">
+							<input type="number" class="form-control" id="redValueBox" placeholder="0 to 255" min="0" max="255" name="newRedValue" 
+							ng-model="colors.redValue">
 						</div>
-						<button type="submit" class="btn btn-danger">Set Value</button>
 					</form>
 					<form class="form-inline">
 						<div class="form-group">
 							<label class="sr-only" for="greenValueBox">Green:</label>
-							<input type="number" class="form-control" id="greenValueBox" placeholder="0 to 255" min="0" max="255" name="newGreenValue">
+							<input type="number" class="form-control" id="greenValueBox" placeholder="0 to 255" min="0" max="255" name="newGreenValue"
+							ng-model="colors.greenValue">
 						</div>
-						<button type="submit" class="btn btn-success">Set Value</button>
 					</form>
 					<form class="form-inline">
 						<div class="form-group">
 							<label class="sr-only" for="blueValueBox">Blue:</label>
-							<input type="number" class="form-control" id="blueValueBox" placeholder="0 to 255" min="0" max="255" name="newBlueValue" ng-model="blueValue">
+							<input type="number" class="form-control" id="blueValueBox" placeholder="0 to 255" min="0" max="255" name="newBlueValue" 
+							ng-model="colors.blueValue">
 						</div>
-						<button type="submit" class="btn btn-primary" ng-click="updateBlue($newBlueValue)">Set Value</button>
 					</form>
 				</div>
 			</div>
