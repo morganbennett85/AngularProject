@@ -1,4 +1,4 @@
-# AngularProject
+# Color Game Project using AngularJS
 
 A project that exemplifies use of interactive functions in AngularJS. 
 
